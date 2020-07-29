@@ -52,4 +52,6 @@ function palidromePermutation(str) {
   //so this one gets rid of spaces but not non-letter characters.
   //mine was obviously overkill on this but ensures that nonletter charactes are not counted
   //also i did not need to do the ternary operator at the end
+
+  //the book had a bit manipulation solution that I do not understand. page 198.
   
