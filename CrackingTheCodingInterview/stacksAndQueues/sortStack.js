@@ -76,7 +76,7 @@ class Stack {
 function sortStackFromBook(s){
     let r = new Stack;
     while (!s.isEmpty()){
-        let temp = s.pop();
+        let tmp = s.pop();
         while (!r.isEmpty() && r.peek() > tmp){
             s.push(r.pop());
         }
