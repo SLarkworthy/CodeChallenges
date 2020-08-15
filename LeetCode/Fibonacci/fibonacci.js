@@ -20,3 +20,15 @@ var fib = function(num) {
    }
 return prev2
 }
+
+//The recursive solution is O(2^n) time!!! exponential!! Very bad.
+//Technically it is not 2, but rather the golden ratio.
+
+//Memoization is a way to handle this!
+var memoFib = function(n, memo=[]){
+    if (memo[n] !== undefined) return memo[n]
+    if (n <= 2) return 1;
+    var res = memoFib(n-1, memo) + memoFib(n-2, memo);
+    memo[n] = res;
+    return res;
+}

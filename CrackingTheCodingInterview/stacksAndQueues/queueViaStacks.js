@@ -20,7 +20,7 @@ class MyQueue {
       }
     }
   
-    dequeue(val){
+    dequeue(){
       return this.queueAsStack.pop();
     }
     printqueue(){
