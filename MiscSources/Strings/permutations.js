@@ -1,3 +1,5 @@
+//Given a string and a pattern, find out if the string contains any permutation of the pattern.
+
 const find_permutation = function(str, pattern) {
     let patternObj = {};
     for (let i = 0; i < pattern.length; i++) {
